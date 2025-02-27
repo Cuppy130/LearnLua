@@ -251,6 +251,7 @@ button.ClickDetector.MouseClick:Connect(function(player)
 end)
 ```
 In this example, the `isDebouncing` flag is used to prevent multiple clicks on the button within a 1-second interval.
+
 ## 1.2.5 Event Filtering
 Event filtering is a technique used to limit the events that trigger an event listener based on certain conditions. This can help improve performance and reduce unnecessary function calls. For example, you can filter events based on the type of object that triggered the event:
 ```lua
@@ -265,3 +266,17 @@ In this example, the event listener only responds to touches from objects that a
 
 ## 1.2.6 Event Best Practices
 - Use descriptive names for event listeners to make the code self-explanatory.
+- Keep event listeners small and focused on a single task. This makes them easier to read, test, and maintain.
+- Avoid using global variables within event listeners unless necessary. Use local variables to limit the scope of variables.
+- Document your event listeners with comments to explain their purpose and usage.
+- Use consistent naming conventions for event listeners and parameters to improve code readability.
+- Test your event listeners thoroughly to ensure they work as expected and handle edge cases.
+- Use error handling to manage unexpected situations gracefully.
+- Consider using event filtering to limit the events that trigger an event listener based on certain conditions.
+- Use event debouncing to prevent multiple rapid calls to an event listener.
+- Disconnect event listeners when they are no longer needed to prevent memory leaks.
+- Avoid deep nesting of event listeners to improve code readability.
+
+## Conclusion
+In this chapter, we covered the basics of functions and events in Roblox Lua programming. Functions are reusable blocks of code that perform specific tasks, while events allow you to respond to user actions and game state changes. Understanding how to create and use functions and events is essential for building interactive and dynamic games in Roblox.
+By following best practices for functions and events, you can create clean, efficient, and maintainable code that enhances the player experience in your games. In the next chapter, we will explore the Roblox API and how to use it to create a simple game.
