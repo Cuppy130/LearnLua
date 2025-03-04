@@ -6,9 +6,8 @@ local data = {
 local function printData(data)
     for _, entry in ipairs(data) do
         for key, value in pairs(entry) do
-            io.write(key .. ": " .. tostring(value) .. "\t")
+            print(key .. ": " .. tostring(value))
         end
-        io.write("\n")
     end
 end
 -- Usage
